@@ -108,7 +108,9 @@ public class JavaInfo {
             return "openj9";
         } else if (impl.contains("oracle") || impl.contains("hotspot") || impl.contains("openjdk")) {
             return "hotspot";
-        } else {
+        }else if(impl.contains("maxine")){
+	    return "maxine";
+	} else {
             System.out.println("Cannot determine System.getProperty('java.vm.name')=" + impl + "\n");
             return null;
         }

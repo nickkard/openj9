@@ -43,7 +43,7 @@ my $iterations     = 1;
 my $testFlag       = '';
 my @allLevels      = ( "sanity", "extended", "special" );
 my @allGroups      = ( "functional", "openjdk", "external", "perf", "jck", "system" );
-my @allImpls       = ( "openj9", "ibm", "hotspot", "sap" );
+my @allImpls       = ( "openj9", "ibm", "hotspot", "sap", "maxine" );
 
 foreach my $argv (@ARGV) {
 	if ( $argv =~ /^--graphSpecs=(.*)/ ) {
