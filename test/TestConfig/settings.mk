@@ -105,6 +105,8 @@ ifndef JVM_VERSION
 
 ifeq (hotspot, $(JDK_IMPL))
 	JVM_VERSION = $(OPENJDK_VERSION)
+else ifeq (maxine, $(JDK_IMPL))
+	JVM_VERSION = $(OPENJDK_VERSION)
 else 
 	JVM_VERSION = $(OPENJDK_VERSION)-$(JDK_IMPL)
 endif
